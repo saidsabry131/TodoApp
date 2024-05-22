@@ -1,5 +1,6 @@
 // main class
 import 'package:flutter/material.dart';
+import 'package:todoo_app/auth/screens/Welcome.dart';
 import 'package:todoo_app/models/task_data.dart';
 import 'screens/tasks_screen.dart';
 import 'package:provider/provider.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       create: (context) => TaskData(),
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: TasksScreen(),
+        home: Welcome(),
       ),
     );
   }
